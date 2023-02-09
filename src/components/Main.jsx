@@ -29,7 +29,7 @@ const Main = () => {
             <p>Feels Like</p>
           </div>
           <div>
-            <p>{humidity}</p>
+            <p>{humidity} %</p>
             <p>Humidity</p>
           </div>
           <div>

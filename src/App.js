@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ModalSearch from './components/Search';
+import Navbar from './components/Navbar'
+import Main from './components/Main';
+import './App.css'
+import { useSelector } from 'react-redux';
 
 function App() {
+  const data = useSelector(state => state.getData.data)
+  const {weather } = data
+  const mainWeather = weather ? weather[0].main : null
+  const style = `App ${mainWeather}`
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style}>
+      <Navbar/>
+      <ModalSearch/>
+      <Main/>
     </div>
   );
 }

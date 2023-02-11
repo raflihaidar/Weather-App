@@ -3,30 +3,8 @@
 @tailwind utilities;
 
 .App {
-  height: 100vh;
-  background-image: url("./img/Cloud.jpg");
+  background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.Clouds {
-  background-image: url("./img/Cloud.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.Rain {
-  background-image: url("./img/Rain.jpg");
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.Thunderstorm {
-  background-image: url("./img/Thunderstrom.jpg");
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.Haze {
-  background-image: url("./img/Haze.jpg");
-  background-repeat: no-repeat;
+  background-position: center;
 }

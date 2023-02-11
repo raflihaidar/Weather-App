@@ -39,7 +39,7 @@ import axios from 'axios'
   }
 
   return (
-    <div className='flex justify-between m-10 p-3 w-5/5 border-2 rounded-md bg-opacity-30 bg-gray-300 shadow-lg'>
+    <div className='flex justify-between p-3 w-4/5 mx-auto my-10 border-2 rounded-xl  bg-gray-200 shadow-lg'>
       <input type="text" className="border-none outline-none input w-full bg-transparent" onChange={searchCity} placeholder="Masukkan Nama Kota Anda"/> 
       <button onClick={getWeather} className="bg-gray-800 p-3 rounded-3xl">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-slate-300">

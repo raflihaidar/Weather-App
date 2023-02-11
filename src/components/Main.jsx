@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import '../App.css'
 
 
 const Main = () => {
@@ -19,7 +20,7 @@ const Main = () => {
   return (
       <>
         {Object.keys(data).length === 0 ? 
-        null
+        <div className='w-screen h-screen'></div>
         :
         <div className='flex w-full flex-col gap-16'>
           <section className='flex justify-between items-center w-3/5 m-auto p-x-2'>
@@ -35,7 +36,7 @@ const Main = () => {
 
           <section className='w-4/5 m-auto'>
             <p className='text-2xl text-center mb-2'>Details</p>
-            <div className='flex justify-around text-center bg-gray-300 p-3 bg-opacity-30 shadow-lg'>
+            <div className='flex justify-around text-center bg-gray-200 p-3 shadow-lg rounded-xl'>
               <div>
                 <p>{feelsLike}</p>
                 <p>Feels Like</p>

@@ -1,16 +1,17 @@
-import ModalSearch from './components/Search';
+import  './App.css'
 import Navbar from './components/Navbar'
-import Main from './components/Main';
-import Forecast from './components/forecast';
+import Search from './components/Search'
+import Main from './components/Main'
+import Forecast from './components/forecast'
 
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <ModalSearch/>
-      <Main/>
-      <Forecast/>
+    <div className='App'>
+        <Navbar/>
+        <Search/>
+        <Main/>
+        <Forecast/>
     </div>
   );
 }

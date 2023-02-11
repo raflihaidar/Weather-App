@@ -6,7 +6,7 @@
   height: 100vh;
   background-image: url("./img/Cloud.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
 }
 .Clouds {
   background-image: url("./img/Cloud.jpg");
@@ -17,19 +17,16 @@
 .Rain {
   background-image: url("./img/Rain.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
 
 .Thunderstorm {
   background-image: url("./img/Thunderstrom.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
 }
 
 .Haze {
   background-image: url("./img/Haze.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }

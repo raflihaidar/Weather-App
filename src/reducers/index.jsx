@@ -1,9 +1,10 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { searchCity, getData } from "./setWeather";
+import { searchCity, getData,  forecastReducer } from "./setWeather";
 
  const WeatherReducers = combineReducers({
     searchCity : searchCity,
-    getData : getData
+    getData : getData,
+    getForecast : forecastReducer
  })
 
  export default WeatherReducers;

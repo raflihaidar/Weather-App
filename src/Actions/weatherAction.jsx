@@ -13,3 +13,10 @@ export const getData = (weather) => {
         payload : weather
     }
 }
+
+export const forecastAction = (weather) => {
+    return {
+        type :ActionTypes.FORECAST,
+        payload : weather
+    }
+}

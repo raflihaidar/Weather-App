@@ -1,0 +1,137 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 3,
+    "list": [
+        {
+            "dt": 1675954800,
+            "main": {
+                "temp": 298.12,
+                "feels_like": 299.28,
+                "temp_min": 298.12,
+                "temp_max": 298.34,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1008,
+                "humidity": 100,
+                "temp_kf": -0.22
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 75
+            },
+            "wind": {
+                "speed": 3.24,
+                "deg": 275,
+                "gust": 7.71
+            },
+            "visibility": 10000,
+            "pop": 0.88,
+            "rain": {
+                "3h": 2.45
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-02-09 15:00:00"
+        },
+        {
+            "dt": 1675965600,
+            "main": {
+                "temp": 298.09,
+                "feels_like": 299.17,
+                "temp_min": 298.04,
+                "temp_max": 298.09,
+                "pressure": 1008,
+                "sea_level": 1008,
+                "grnd_level": 1006,
+                "humidity": 97,
+                "temp_kf": 0.05
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 83
+            },
+            "wind": {
+                "speed": 2.51,
+                "deg": 279,
+                "gust": 5.62
+            },
+            "visibility": 10000,
+            "pop": 0.92,
+            "rain": {
+                "3h": 0.38
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-02-09 18:00:00"
+        },
+        {
+            "dt": 1675976400,
+            "main": {
+                "temp": 297.75,
+                "feels_like": 298.72,
+                "temp_min": 297.56,
+                "temp_max": 297.75,
+                "pressure": 1007,
+                "sea_level": 1007,
+                "grnd_level": 1007,
+                "humidity": 94,
+                "temp_kf": 0.19
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10n"
+                }
+            ],
+            "clouds": {
+                "all": 92
+            },
+            "wind": {
+                "speed": 2.64,
+                "deg": 267,
+                "gust": 6.21
+            },
+            "visibility": 10000,
+            "pop": 0.64,
+            "rain": {
+                "3h": 0.2
+            },
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2023-02-09 21:00:00"
+        }
+    ],
+    "city": {
+        "id": 1625822,
+        "name": "Surabaya",
+        "coord": {
+            "lat": -7.2492,
+            "lon": 112.7508
+        },
+        "country": "ID",
+        "population": 2374658,
+        "timezone": 25200,
+        "sunrise": 1675895522,
+        "sunset": 1675940067
+    }
+}

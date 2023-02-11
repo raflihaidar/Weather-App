@@ -2,7 +2,8 @@ import { ActionTypes } from "../contans/Action-type";
 
 const initialState = {
     city : "",
-    data : {}
+    data : {},
+    forecast : {}
 }
 
 export const searchCity = (state = initialState, {type, payload}) => {
@@ -18,6 +19,15 @@ export const getData = (state = initialState, {type, payload}) => {
     switch(type){
         case ActionTypes.GET_DATA:
             return {...state, data:payload}
+        default :
+            return state
+    }
+}
+
+export const forecastReducer = (state = initialState, {type, payload}) => {
+    switch(type){
+        case ActionTypes.FORECAST:
+            return {...state, forecast:payload}
         default :
             return state
     }

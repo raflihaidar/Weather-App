@@ -32,4 +32,3 @@ export const forecastReducer = (state = initialState, {type, payload}) => {
             return state
     }
 }
-

@@ -1,42 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { searchWeather, getData, forecastAction } from '../Actions/weatherAction'
-import swal from 'sweetalert'
-import axios from 'axios'
 
- const Search = () => {
-  const city = useSelector((state) => state.searchCity.city)
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=947d5b88220e3f08168dd065fcfbc221&units=metric`
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=5&appid=69c185a86099f7d3788ef9097d64d59e&units=metric`
-  const dispatch = useDispatch()
-  const input = document.querySelector(".input")
 
-  const searchCity = (e) => {
-    dispatch(searchWeather(e.target.value))
-  }
+ const Search = ({searchCity, getWeather}) => {
 
-  const forecastData = async () => {
-    const response = await axios 
-    .get(forecastUrl)
-    .catch((err) => console.log("error", err))
-    dispatch(forecastAction(response.data))
-  }
-
-  const getWeather = async () => {
-    const response = await axios
-    .get(url)
-    .catch(() => {
-      swal({
-        title: "Not Found",
-        icon: "warning",
-        dangerMode: true,
-      })
-      dispatch(getData({}))
-      dispatch(forecastAction({}))
-    })
-    input.value = ""
-    dispatch(getData(response.data))
-    forecastData()
-  }
 
   return (
     <div className='flex justify-between p-3 w-4/5 mx-auto my-10 border-2 rounded-xl  bg-gray-200 shadow-lg'>
